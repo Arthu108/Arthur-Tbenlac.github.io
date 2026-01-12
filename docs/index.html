@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Arthur Tabenlac – Ingénieur Agroalimentaire</title>
+<title>Arthur Tabenlac – Food Engineering Portfolio</title>
 
 <style>
 body {
@@ -12,6 +12,7 @@ body {
   color: #222;
 }
 
+/* HEADER */
 header {
   background: #1f3c88;
   color: white;
@@ -25,7 +26,7 @@ header img {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 header .text {
@@ -45,6 +46,7 @@ header h2 {
   color: #ffd369;
 }
 
+/* NAV */
 nav {
   background: #162b60;
   padding: 15px;
@@ -53,15 +55,34 @@ nav {
 
 nav button {
   margin: 5px;
-  padding: 10px 20px;
-  border: none;
-  background: #ffd369;
-  color: #162b60;
+  padding: 12px 25px;
+  border: 2px solid #ffd369;
+  background: transparent;
+  color: #ffd369;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
+nav button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,211,105,0.7), transparent);
+  animation: glow 2.5s infinite;
+}
+
+@keyframes glow {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* SECTIONS */
 section {
   max-width: 1100px;
   margin: auto;
@@ -80,12 +101,8 @@ h3 {
   padding-bottom: 5px;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-.skill-grid {
+/* CARDS */
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -95,7 +112,7 @@ ul {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
 }
 </style>
 
@@ -105,15 +122,15 @@ function show(lang) {
   document.getElementById(lang).classList.add("active");
 }
 </script>
-
 </head>
+
 <body>
 
 <header>
   <img src="https://raw.githubusercontent.com/Arthu108/Arthur-Tbenlac.github.io/main/WhatsApp_Image_2026-01-12_at_00.35.44%5B1%5D.jpeg">
   <div class="text">
     <h1>Arthur Tabenlac</h1>
-    <h2>Étudiant ingénieur en agroalimentaire</h2>
+    <h2>Food Engineering Student</h2>
   </div>
 </header>
 
@@ -127,97 +144,88 @@ function show(lang) {
 <section id="fr" class="active">
 <h3>Profil</h3>
 <p>
-Actuellement en 4e année du cycle ingénieur à JUNIA ISA (Lille), je suis un futur ingénieur passionné par l’optimisation des processus et l’excellence opérationnelle.  
-Ma formation me donne une solide base technique que j’applique aux domaines de la Qualité, de l’Amélioration Continue et de la Gestion de Production.
+Actuellement en 4e année du cycle ingénieur à JUNIA ISA (Lille), je suis un futur ingénieur passionné par l’optimisation des processus et l’excellence opérationnelle. 
+Ma formation me permet d’intervenir efficacement en Qualité, Amélioration Continue et Gestion de Production.
 </p>
 
-<h3>🛠 Compétences techniques</h3>
-<div class="skill-grid">
-<div class="card">
-<b>Qualité & Management</b>
-<ul>
-<li>ISO 9001, SMQ, audits internes</li>
-<li>HACCP</li>
-<li>Gestion des non-conformités (CAPA)</li>
-<li>Plans de contrôle & métrologie</li>
-<li>Documentation qualité</li>
-</ul>
+<h3>Compétences & Méthodes</h3>
+<div class="grid">
+<div class="card"><b>Qualité</b><br>ISO 9001, HACCP, audits, CAPA, plans de contrôle</div>
+<div class="card"><b>Amélioration Continue</b><br>Kaizen, Lean, Six Sigma, PDCA</div>
+<div class="card"><b>Production</b><br>Flux, stocks, PIC/PDP, organisation d’atelier</div>
+<div class="card"><b>Outils</b><br>VSM, 5S, Kanban, SMED, Excel, Word, PowerPoint</div>
 </div>
 
-<div class="card">
-<b>Amélioration Continue</b>
-<ul>
-<li>Kaizen</li>
-<li>Lean Manufacturing</li>
-<li>Six Sigma – DMAIC</li>
-<li>PDCA</li>
-<li>Gestion du changement</li>
-</ul>
+<h3>Qualités professionnelles</h3>
+<div class="grid">
+<div class="card">Curiosité intellectuelle</div>
+<div class="card">Rigueur & organisation</div>
+<div class="card">Adaptabilité</div>
+<div class="card">Autonomie & proactivité</div>
+<div class="card">Communication inter-équipes</div>
+<div class="card">Orientation solution</div>
 </div>
 
-<div class="card">
-<b>Production & Organisation</b>
-<ul>
-<li>Gestion des flux & stocks</li>
-<li>PIC / PDP</li>
-<li>Analyse de capacité</li>
-<li>Organisation d’atelier</li>
-</ul>
+<h3>Axes d’amélioration</h3>
+<div class="grid">
+<div class="card">Exigence élevée pouvant mener à trop d’analyse</div>
+<div class="card">Forte concentration sur la tâche en période de stress</div>
 </div>
-</div>
-
-<h3>💻 Outils & Méthodes</h3>
-<div class="skill-grid">
-<div class="card">
-<ul>
-<li>VSM</li>
-<li>5S</li>
-<li>Kanban / JAT</li>
-<li>SMED</li>
-<li>Poka-Yoke</li>
-</ul>
-</div>
-
-<div class="card">
-<ul>
-<li>Excel avancé (TCD, formules)</li>
-<li>Word</li>
-<li>PowerPoint</li>
-</ul>
-</div>
-</div>
-
-<h3>🌟 Qualités professionnelles</h3>
-<ul>
-<li>Curiosité intellectuelle</li>
-<li>Adaptabilité</li>
-<li>Organisation et rigueur</li>
-<li>Gestion du stress</li>
-<li>Facilité d’apprentissage</li>
-<li>Esprit critique</li>
-<li>Orientation solution</li>
-<li>Communication inter-équipes</li>
-<li>Autonomie</li>
-<li>Proactivité</li>
-</ul>
-
-<h3>⛔ Axes d’amélioration</h3>
-<ul>
-<li>Exigence élevée pouvant conduire à trop d’analyse.</li>
-<li>Forte orientation tâche en période de stress.</li>
-</ul>
 </section>
 
 <!-- EN -->
 <section id="en">
 <h3>Profile</h3>
-<p>Food engineering student focused on quality, continuous improvement and industrial performance.</p>
+<p>4th-year food engineering student at JUNIA ISA, focused on process optimization, quality and operational excellence.</p>
+
+<h3>Skills</h3>
+<div class="grid">
+<div class="card">Quality systems, HACCP, audits, CAPA</div>
+<div class="card">Lean, Kaizen, Six Sigma, PDCA</div>
+<div class="card">Production planning & flow management</div>
+<div class="card">Excel, VSM, 5S, Kanban, SMED</div>
+</div>
+
+<h3>Strengths</h3>
+<div class="grid">
+<div class="card">Curiosity</div>
+<div class="card">Adaptability</div>
+<div class="card">Organization</div>
+<div class="card">Team communication</div>
+</div>
+
+<h3>Areas for improvement</h3>
+<div class="grid">
+<div class="card">High self-demand</div>
+<div class="card">Task-focused under pressure</div>
+</div>
 </section>
 
 <!-- DE -->
 <section id="de">
 <h3>Profil</h3>
-<p>Student der Lebensmitteltechnik mit Schwerpunkt Qualität und Prozessoptimierung.</p>
+<p>Student der Lebensmitteltechnik im 4. Jahr mit Schwerpunkt Qualität, Effizienz und Prozessoptimierung.</p>
+
+<h3>Kompetenzen</h3>
+<div class="grid">
+<div class="card">Qualitätsmanagement, HACCP</div>
+<div class="card">Lean, Kaizen, Six Sigma</div>
+<div class="card">Produktionsorganisation</div>
+<div class="card">Excel, VSM, 5S, Kanban</div>
+</div>
+
+<h3>Stärken</h3>
+<div class="grid">
+<div class="card">Analytisches Denken</div>
+<div class="card">Anpassungsfähigkeit</div>
+<div class="card">Selbstständigkeit</div>
+</div>
+
+<h3>Verbesserungsbereiche</h3>
+<div class="grid">
+<div class="card">Hohe Eigenanforderung</div>
+<div class="card">Starker Fokus auf Aufgaben unter Stress</div>
+</div>
 </section>
 
 </body>
