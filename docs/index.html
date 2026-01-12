@@ -1,165 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Arthur Tabenlac - Portfolio</title>
+<title>Arthur Tabenlac – Portfolio</title>
+
 <style>
-body { font-family: Arial, sans-serif; margin: 40px; background:#f4f6f8;}
-h1 { color:#1f3c88; }
-h2 { color:#2a5298; }
-.section { background:white; padding:20px; margin-bottom:20px; border-radius:8px;}
-.lang-btn { float:right; padding:10px; background:#1f3c88; color:white; border:none; cursor:pointer;}
-  .profile {
-  text-align: center;
-  margin-bottom: 30px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #f5f5f5;
 }
-.profile2 {
+
+.container {
+  max-width: 900px;
+  background: white;
+  padding: 40px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.header {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-  margin-bottom: 40px;
+
+.header img {
+  width: 220px;
+  height: auto;
 }
 
-.profile img {
-  width: 240px;
-  border-radius: 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.profile div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.profile h1 {
+.header-text h1 {
   margin: 0;
+  font-size: 36px;
 }
 
-.profile h2 {
-  margin-top: 8px;
-  color: #555;
-}
-  .profile2 {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-  margin-bottom: 40px;
+.header-text h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #1f3c88;
+  font-weight: bold;
 }
 
-.profile2 img {
-  width: 240px;
-  border-radius: 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.profile2 div {
-  display: flex;
-  flex-direction: column;
-}
-
-.profile2 h1 {
-  margin: 0;
-}
-
-.profile2 h2 {
-  margin-top: 8px;
-  color: #555;
-}
-  .profile2 h2 {
-  font-weight: 700;
-  font-size: 20px;
+/* SECTIONS */
+h3 {
+  margin-top: 40px;
   color: #1f3c88;
 }
-  .profile2 div {
-  display: block !important;
-}
 
-.profile2 h1 {
-  display: block;
-}
-
-.profile2 h2 {
-  display: block;
-  font-weight: 700;
-  color: #1f3c88;
-  margin-top: 8px;
+p {
+  line-height: 1.6;
 }
 </style>
-<script>
-function showFR(){
-document.getElementById("fr").style.display="block";
-document.getElementById("en").style.display="none";
-}
-function showEN(){
-document.getElementById("fr").style.display="none";
-document.getElementById("en").style.display="block";
-}
-</script>
 </head>
 
 <body>
 
-<button class="lang-btn" onclick="showFR()">FR</button>
-<button class="lang-btn" onclick="showEN()">EN</button>
+<div class="container">
 
-<div id="fr">
-
-<div class="profile2">
-  <img src="https://raw.githubusercontent.com/Arthu108/Arthur-Tbenlac.github.io/main/WhatsApp_Image_2026-01-12_at_00.35.44%5B1%5D.jpeg" alt="Photo de Arthur">
-  <h1>Arthur Tabenlac</h1>
-  <h2>Étudiant ingénieur en agroalimentaire</h2>
-</div>
+<div class="header">
+  <img src="https://raw.githubusercontent.com/Arthu108/Arthur-Tbenlac.github.io/main/WhatsApp_Image_2026-01-12_at_00.35.44%5B1%5D.jpeg">
+  <div class="header-text">
+    <h1>Arthur Tabenlac</h1>
+    <h2>Étudiant ingénieur en agroalimentaire</h2>
+  </div>
 </div>
 
+<h3>Profil</h3>
+<p>
+Étudiant en ingénierie agroalimentaire spécialisé en qualité, sécurité sanitaire et amélioration des procédés de production.
+</p>
 
-<div class="section">
-<b>Profil</b><br>
-Étudiant ingénieur à JUNIA ISA Lille, spécialisé en qualité, amélioration continue, production et sécurité des aliments.
-</div>
+<h3>Projet principal</h3>
+<p>
+<strong>Mise en place du système HACCP sur une ligne de production de jus d’ananas – Xpert Group</strong><br><br>
+Analyse des écarts de rendement entre lots malgré une même quantité de matière première, identification des pertes et amélioration de la stabilité du procédé.
+</p>
 
-<div class="section">
-<b>Compétences</b><br>
-- HACCP, traçabilité, contrôle qualité<br>
-- Suivi des rendements, pertes matières<br>
-- Amélioration continue, 5S, PDCA
-</div>
-
-<div class="section">
-<b>Projet industriel – Mise en place du HACCP</b><br>
-Mise en place du système HACCP sur la ligne de production d'une pate à tartiner DADA au sein de l’entreprise Xpert Group.<br>
-Identification des dangers, définition des CCP, mise en place des contrôles et sécurisation de la production.
-</div>
-
-</div>
-
-<div id="en" style="display:none">
-
-<div class="profile2">
-  <img src="https://raw.githubusercontent.com/Arthu108/Arthur-Tbenlac.github.io/main/WhatsApp_Image_2026-01-12_at_00.35.44%5B1%5D.jpeg" alt="Arthur profile photo">
-  <h1>Arthur Tabenlac</h1>
-  <h2>Food Engineering Student</h2>
-</div>
-</div>
-
-<div class="section">
-<b>Profile</b><br>
-Food engineering student at JUNIA ISA Lille, specialized in quality, production and food safety.
-</div>
-
-<div class="section">
-<b>Skills</b><br>
-- HACCP, traceability, quality control<br>
-- Yield monitoring, material losses<br>
-- Continuous improvement, PDCA, 5S
-</div>
-
-<div class="section">
-<b>Industrial Project – HACCP Implementation</b><br>
-Implementation of the HACCP system on a spread DADA production line at Xpert Group.<br>
-Hazard analysis, definition of CCPs, control measures and food safety improvement.
-</div>
+<h3>Compétences</h3>
+<ul>
+  <li>HACCP et sécurité alimentaire</li>
+  <li>Analyse des procédés de production</li>
+  <li>Contrôle qualité</li>
+  <li>Gestion des rendements</li>
+</ul>
 
 </div>
 
