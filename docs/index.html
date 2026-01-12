@@ -5,125 +5,107 @@
 <title>Arthur Tabenlac – Food Engineering Portfolio</title>
 
 <style>
-body {
+body{
+  margin:0;
   font-family: Arial, sans-serif;
-  margin: 0;
-  color: #222;
+  color:#222;
   background:
-    linear-gradient(rgba(244,246,248,0.9), rgba(244,246,248,0.9)),
-    url("https://images.unsplash.com/photo-1581093588401-22d8d5c0a4d7?auto=format&fit=crop&w=1600&q=80");
+    linear-gradient(rgba(245,247,250,0.92), rgba(245,247,250,0.92)),
+    url("https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
 /* HEADER */
-header {
-  background: #1f3c88;
-  color: white;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
+header{
+  background:#1f3c88;
+  color:white;
+  padding:40px;
+  display:flex;
+  align-items:center;
+  gap:30px;
 }
 
-header img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
+header img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
 }
 
-header .text {
-  display: flex;
-  flex-direction: column;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-header h2 {
-  margin-top: 8px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffd369;
-}
+header h1{margin:0;font-size:36px;}
+header h2{margin-top:8px;font-size:20px;color:#ffd369}
 
 /* NAV */
-nav {
-  background: #162b60;
-  padding: 15px;
-  text-align: center;
+nav{
+  background:#162b60;
+  text-align:center;
+  padding:15px;
 }
 
-nav button {
-  margin: 5px;
-  padding: 12px 25px;
-  border: 2px solid #ffd369;
-  background: transparent;
-  color: #ffd369;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
+nav button{
+  padding:12px 28px;
+  margin:5px;
+  background:transparent;
+  border:2px solid #ffd369;
+  color:#ffd369;
+  font-weight:bold;
+  border-radius:10px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
 }
 
-nav button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(255,211,105,0.7), transparent);
-  animation: glow 2.5s infinite;
+nav button::after{
+  content:"";
+  position:absolute;
+  left:-100%;
+  top:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg, transparent, rgba(255,211,105,0.8), transparent);
+  animation:glow 2.5s infinite;
 }
 
-@keyframes glow {
-  0% { left: -100%; }
-  100% { left: 100%; }
+@keyframes glow{
+  0%{left:-100%}
+  100%{left:100%}
 }
 
 /* CONTENT */
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px;
-  display: none;
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:40px;
+  display:none;
+}
+section.active{display:block}
+
+h3{
+  color:#1f3c88;
+  border-bottom:2px solid #1f3c88;
+  padding-bottom:5px;
+  margin-top:40px;
 }
 
-section.active {
-  display: block;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
 }
 
-h3 {
-  color: #1f3c88;
-  margin-top: 40px;
-  border-bottom: 2px solid #1f3c88;
-  padding-bottom: 5px;
-}
-
-/* CARDS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: rgba(255,255,255,0.93);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+.card{
+  background:rgba(255,255,255,0.94);
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 0 15px rgba(0,0,0,0.12);
 }
 </style>
 
 <script>
-function show(lang) {
-  document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+function show(lang){
+  document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
   document.getElementById(lang).classList.add("active");
 }
 </script>
@@ -132,17 +114,17 @@ function show(lang) {
 <body>
 
 <header>
-  <img src="https://raw.githubusercontent.com/Arthu108/Arthur-Tbenlac.github.io/main/WhatsApp_Image_2026-01-12_at_00.35.44%5B1%5D.jpeg">
-  <div class="text">
-    <h1>Arthur Tabenlac</h1>
-    <h2>Food Engineering Student</h2>
-  </div>
+<img src="https://raw.githubusercontent.com/Arthu108/Arthur-Tbenlac.github.io/main/WhatsApp_Image_2026-01-12_at_00.35.44%5B1%5D.jpeg">
+<div>
+<h1>Arthur Tabenlac</h1>
+<h2>Food Engineering Student</h2>
+</div>
 </header>
 
 <nav>
-  <button onclick="show('fr')">Français</button>
-  <button onclick="show('en')">English</button>
-  <button onclick="show('de')">Deutsch</button>
+<button onclick="show('fr')">Français</button>
+<button onclick="show('en')">English</button>
+<button onclick="show('de')">Deutsch</button>
 </nav>
 
 <!-- FR -->
@@ -152,10 +134,10 @@ function show(lang) {
 
 <h3>Compétences & Outils</h3>
 <div class="grid">
-<div class="card">Qualité : ISO 9001, HACCP, audits, CAPA</div>
-<div class="card">Lean, Kaizen, Six Sigma, PDCA</div>
-<div class="card">Production, flux, stocks, PIC / PDP</div>
-<div class="card">VSM, 5S, Kanban, SMED, Excel</div>
+<div class="card">Qualité – ISO 9001, HACCP, audits, CAPA</div>
+<div class="card">Amélioration continue – Lean, Kaizen, Six Sigma, PDCA</div>
+<div class="card">Production – flux, stocks, planification</div>
+<div class="card">Outils – VSM, 5S, Kanban, SMED, Excel</div>
 </div>
 
 <h3>Qualités professionnelles</h3>
@@ -171,35 +153,67 @@ function show(lang) {
 <h3>Axes d’amélioration</h3>
 <div class="grid">
 <div class="card">Exigence élevée pouvant mener à trop d’analyse</div>
-<div class="card">Forte concentration sur la tâche sous stress</div>
+<div class="card">Forte focalisation sur la tâche sous stress</div>
 </div>
 </section>
 
 <!-- EN -->
 <section id="en">
 <h3>Profile</h3>
-<p>4th-year food engineering student focused on quality, process optimization and industrial performance.</p>
+<p>4th-year food engineering student at JUNIA ISA, focused on process optimization and operational excellence.</p>
 
-<h3>Skills</h3>
+<h3>Skills & Tools</h3>
 <div class="grid">
-<div class="card">Quality systems, HACCP, audits</div>
-<div class="card">Lean, Kaizen, Six Sigma</div>
-<div class="card">Production planning</div>
-<div class="card">Excel, VSM, 5S, Kanban</div>
+<div class="card">Quality – ISO 9001, HACCP, audits, CAPA</div>
+<div class="card">Continuous improvement – Lean, Kaizen, Six Sigma, PDCA</div>
+<div class="card">Production – flows, inventory, planning</div>
+<div class="card">Tools – VSM, 5S, Kanban, SMED, Excel</div>
+</div>
+
+<h3>Strengths</h3>
+<div class="grid">
+<div class="card">Intellectual curiosity</div>
+<div class="card">Organization & rigor</div>
+<div class="card">Adaptability</div>
+<div class="card">Autonomy & proactivity</div>
+<div class="card">Cross-team communication</div>
+<div class="card">Solution-oriented mindset</div>
+</div>
+
+<h3>Areas for improvement</h3>
+<div class="grid">
+<div class="card">High self-demand leading to over-analysis</div>
+<div class="card">Strong task focus under stress</div>
 </div>
 </section>
 
 <!-- DE -->
 <section id="de">
 <h3>Profil</h3>
-<p>Student der Lebensmitteltechnik mit Schwerpunkt Qualität und Effizienz.</p>
+<p>Student der Lebensmitteltechnik im 4. Jahr mit Schwerpunkt Prozessoptimierung und Qualität.</p>
 
-<h3>Kompetenzen</h3>
+<h3>Kompetenzen & Werkzeuge</h3>
 <div class="grid">
-<div class="card">Qualitätsmanagement, HACCP</div>
-<div class="card">Lean, Kaizen, Six Sigma</div>
-<div class="card">Produktionsorganisation</div>
-<div class="card">Excel, VSM, 5S</div>
+<div class="card">Qualität – ISO 9001, HACCP, Audits, CAPA</div>
+<div class="card">Kontinuierliche Verbesserung – Lean, Kaizen, Six Sigma, PDCA</div>
+<div class="card">Produktion – Flüsse, Bestände, Planung</div>
+<div class="card">Werkzeuge – VSM, 5S, Kanban, SMED, Excel</div>
+</div>
+
+<h3>Stärken</h3>
+<div class="grid">
+<div class="card">Intellektuelle Neugier</div>
+<div class="card">Organisation und Genauigkeit</div>
+<div class="card">Anpassungsfähigkeit</div>
+<div class="card">Selbstständigkeit & Proaktivität</div>
+<div class="card">Teamkommunikation</div>
+<div class="card">Lösungsorientierung</div>
+</div>
+
+<h3>Verbesserungsbereiche</h3>
+<div class="grid">
+<div class="card">Hohe Eigenanforderung mit Tendenz zur Überanalyse</div>
+<div class="card">Starker Aufgabenfokus unter Stress</div>
 </div>
 </section>
 
