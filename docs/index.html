@@ -8,11 +8,10 @@
 body{
   margin:0;
   font-family: Arial, sans-serif;
-  color:#222;
   background:#f4f6f8;
+  color:#222;
 }
 
-/* HEADER */
 header{
   background:#1f3c88;
   color:white;
@@ -32,7 +31,6 @@ header img{
 header h1{margin:0;font-size:36px;}
 header h2{margin-top:8px;font-size:20px;color:#ffd369}
 
-/* NAV */
 nav{
   background:#162b60;
   text-align:center;
@@ -68,13 +66,13 @@ nav button::after{
   100%{left:100%}
 }
 
-/* CONTENT */
 section{
   max-width:1100px;
   margin:auto;
   padding:40px;
   display:none;
 }
+
 section.active{display:block}
 
 h3{
@@ -97,7 +95,7 @@ h3{
   box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
 
-  .pdf-grid{
+.pdf-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:15px;
@@ -159,174 +157,46 @@ function show(lang){
 
 <!-- FR -->
 <section id="fr" class="active">
-<h3>Profil</h3>
-<p>Actuellement en 4e année du cycle ingénieur à JUNIA ISA (Lille), je suis un futur ingénieur passionné par l’optimisation des processus et l’excellence opérationnelle.</p>
+<h3>Projet HACCP – XPERT GROUP (TARTIMAX)</h3>
 
-<h3>Compétences & Outils</h3>
-<div class="grid">
-<div class="card">Qualité – ISO 9001, HACCP, audits, CAPA</div>
-<div class="card">Amélioration continue – Lean, Kaizen, Six Sigma, PDCA</div>
-<div class="card">Production – flux, stocks, planification</div>
-<div class="card">Outils – VSM, 5S, Kanban, SMED, Excel</div>
+<div class="card">
+<p>Contribution à la mise en place d’un système HACCP sur la ligne de pâte à tartiner TARTIMAX.</p>
+
+<h4>Contexte</h4>
+<p>L’entreprise faisait face à des risques sanitaires, des exigences clients et des audits à venir. Le HACCP était essentiel pour sécuriser le produit.</p>
+
+<h4>Mon rôle</h4>
+<ul>
+<li>Analyse des dangers</li>
+<li>Contribution à l’identification des CCP</li>
+<li>Mise à jour de documents HACCP</li>
+<li>Sensibilisation des opérateurs</li>
+</ul>
+
+<h4>Documents BPH</h4>
+<div class="pdf-grid">
+<a class="pdf-card" href="MATRICE DES CRITERES.pdf" target="_blank"><span class="arrow">➜</span>Matrice des critères</a>
+<a class="pdf-card" href="EVALUATION ET AMÉLIORATION DES BPH A L'USINE.pdf" target="_blank"><span class="arrow">➜</span>Évaluation des BPH</a>
+<a class="pdf-card" href="LES ETAPES SYNOPTIQUE DE LA MISE EN PLACE DU SYSTEME HACCP.pdf" target="_blank"><span class="arrow">➜</span>Étapes HACCP</a>
 </div>
-
-<h3>Qualités professionnelles</h3>
-<div class="grid">
-<div class="card">Curiosité intellectuelle</div>
-<div class="card">Organisation & rigueur</div>
-<div class="card">Adaptabilité</div>
-<div class="card">Autonomie & proactivité</div>
-<div class="card">Communication inter-équipes</div>
-<div class="card">Orientation solution</div>
-</div>
-
-<h3>Axes d’amélioration</h3>
-<div class="grid">
-<div class="card">Exigence élevée pouvant mener à trop d’analyse</div>
-<div class="card">Forte focalisation sur la tâche sous stress</div>
 </div>
 </section>
 
 <!-- EN -->
 <section id="en">
-<h3>Profile</h3>
-<p>4th-year food engineering student focused on process optimization and operational excellence.</p>
-
-<h3>Skills & Tools</h3>
-<div class="grid">
-<div class="card">Quality – ISO 9001, HACCP, audits</div>
-<div class="card">Lean, Kaizen, Six Sigma, PDCA</div>
-<div class="card">Production planning & flows</div>
-<div class="card">VSM, 5S, Kanban, SMED, Excel</div>
-</div>
-
-<h3>Strengths</h3>
-<div class="grid">
-<div class="card">Curiosity</div>
-<div class="card">Organization & rigor</div>
-<div class="card">Adaptability</div>
-<div class="card">Autonomy & proactivity</div>
-<div class="card">Team communication</div>
-<div class="card">Solution orientation</div>
-</div>
-
-<h3>Areas for improvement</h3>
-<div class="grid">
-<div class="card">High self-demand</div>
-<div class="card">Strong task focus under pressure</div>
+<h3>HACCP Project – XPERT GROUP (TARTIMAX)</h3>
+<div class="card">
+<p>Contribution to the implementation of a HACCP system on a spread production line.</p>
 </div>
 </section>
 
 <!-- DE -->
 <section id="de">
-<h3>Profil</h3>
-<p>Student der Lebensmitteltechnik mit Schwerpunkt Prozessoptimierung und Qualität.</p>
-
-<h3>Kompetenzen & Werkzeuge</h3>
-<div class="grid">
-<div class="card">ISO 9001, HACCP, Qualitätsmanagement</div>
-<div class="card">Lean, Kaizen, Six Sigma, PDCA</div>
-<div class="card">Produktionsplanung & Flüsse</div>
-<div class="card">VSM, 5S, Kanban, Excel</div>
-</div>
-
-<h3>Stärken</h3>
-<div class="grid">
-<div class="card">Neugier</div>
-<div class="card">Organisation</div>
-<div class="card">Anpassungsfähigkeit</div>
-<div class="card">Selbstständigkeit</div>
-<div class="card">Teamkommunikation</div>
-<div class="card">Lösungsorientierung</div>
-</div>
-
-<h3>Verbesserungsbereiche</h3>
-<div class="grid">
-<div class="card">Hohe Eigenanforderung</div>
-<div class="card">Starker Aufgabenfokus unter Stress</div>
+<h3>HACCP Projekt – XPERT GROUP (TARTIMAX)</h3>
+<div class="card">
+<p>Beitrag zur Einführung eines HACCP-Systems für eine Brotaufstrich-Linie.</p>
 </div>
 </section>
 
 </body>
 </html>
-
-<!-- ================= PROJECT HACCP ================= -->
-<section id="project-haccp">
-  <h3>Projet industriel – HACCP</h3>
-
-  <div class="card">
-    <h4>Contribution à la mise en place d’un système HACCP</h4>
-    <p><b>Entreprise :</b> XPERT GROUP<br>
-    <b>Ligne :</b> Pâte à tartiner TARTIMAX</p>
-
-    <h4>1. Contexte industriel</h4>
-    <p>
-      Dans le cadre de mon stage en industrie agroalimentaire au Cameroun, j’ai participé à la mise en place d’un système HACCP
-      sur la ligne de production de la pâte à tartiner TARTIMAX.
-      L’entreprise faisait face à des risques de non-conformités, des risques microbiologiques et des exigences réglementaires
-      et clients croissantes. La structuration du système HACCP était donc essentielle pour sécuriser le produit.
-    </p>
-
-    <h4>2. Problématique</h4>
-    <p>
-      Comment identifier, évaluer et maîtriser les dangers sanitaires afin de garantir la sécurité de la pâte à tartiner
-      tout au long du processus de production ?
-    </p>
-
-    <h4>3. Méthodologie HACCP</h4>
-    <ul>
-      <li>Constitution de l’équipe HACCP</li>
-      <li>Description du produit et de son utilisation</li>
-      <li>Diagramme de fabrication</li>
-      <li>Analyse des dangers (biologiques, chimiques, physiques)</li>
-      <li>Détermination des CCP</li>
-      <li>Limites critiques</li>
-      <li>Systèmes de surveillance</li>
-      <li>Actions correctives</li>
-      <li>Vérification et documentation</li>
-    </ul>
-    <p><i>Le projet a démarré par la mise en place des Bonnes Pratiques d’Hygiène (PRP), base indispensable du HACCP.</i></p>
-
-    <h4>4. Mon rôle</h4>
-    <ul>
-      <li>Participation à l’analyse des dangers à chaque étape</li>
-      <li>Contribution à l’identification des points critiques</li>
-      <li>Aide à la définition des paramètres de maîtrise</li>
-      <li>Création et mise à jour de documents HACCP</li>
-      <li>Sensibilisation des opérateurs aux bonnes pratiques</li>
-    </ul>
-
-    <h4>5. Outils utilisés</h4>
-    <ul>
-      <li>Diagramme de fabrication</li>
-      <li>Tableaux d’analyse des dangers</li>
-      <li>Arbre de décision HACCP</li>
-      <li>Fiches CCP</li>
-      <li>Méthode des 5M</li>
-    </ul>
-
-    <h4>Phase 1 – Bonnes Pratiques d’Hygiène (PRP)</h4>
-    <p>
-      Cette phase a permis de réduire les risques à la source avant l’identification des CCP.
-      Elle repose sur les documents suivants :
-    </p>
-
-    <div class="pdf-grid">
-      <a class="pdf-card" href="MATRICE%20DES%20CRITERES.pdf" target="_blank">
-        <span class="arrow">➜</span>
-        Matrice des critères HACCP
-      </a>
-
-      <a class="pdf-card" href="EVALUATION%20ET%20AMÉLIORATION%20DES%20BPH%20A%20L'USINE.pdf" target="_blank">
-        <span class="arrow">➜</span>
-        Évaluation & amélioration des BPH
-      </a>
-
-      <a class="pdf-card" href="LES%20ETAPES%20SYNOPTIQUE%20DE%20LA%20MISE%20EN%20PLACE%20DU%20SYSTEME%20HACCP.pdf" target="_blank">
-        <span class="arrow">➜</span>
-        Étapes de mise en place HACCP
-      </a>
-    </div>
-
-  </div>
-</section>
