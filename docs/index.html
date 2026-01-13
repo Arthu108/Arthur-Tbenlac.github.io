@@ -96,6 +96,41 @@ h3{
   border-radius:12px;
   box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
+
+  .pdf-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+  margin-top:20px;
+}
+
+.pdf-card{
+  background:#1f3c88;
+  color:white;
+  padding:15px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  position:relative;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.pdf-card:hover{
+  background:#162b60;
+  transform:scale(1.05);
+}
+
+.arrow{
+  display:inline-block;
+  margin-right:10px;
+  animation:arrowMove 1s infinite alternate;
+}
+
+@keyframes arrowMove{
+  from{transform:translateX(0)}
+  to{transform:translateX(10px)}
+}
 </style>
 
 <script>
@@ -214,3 +249,84 @@ function show(lang){
 
 </body>
 </html>
+
+<!-- ================= PROJECT HACCP ================= -->
+<section id="project-haccp">
+  <h3>Projet industriel – HACCP</h3>
+
+  <div class="card">
+    <h4>Contribution à la mise en place d’un système HACCP</h4>
+    <p><b>Entreprise :</b> XPERT GROUP<br>
+    <b>Ligne :</b> Pâte à tartiner TARTIMAX</p>
+
+    <h4>1. Contexte industriel</h4>
+    <p>
+      Dans le cadre de mon stage en industrie agroalimentaire au Cameroun, j’ai participé à la mise en place d’un système HACCP
+      sur la ligne de production de la pâte à tartiner TARTIMAX.
+      L’entreprise faisait face à des risques de non-conformités, des risques microbiologiques et des exigences réglementaires
+      et clients croissantes. La structuration du système HACCP était donc essentielle pour sécuriser le produit.
+    </p>
+
+    <h4>2. Problématique</h4>
+    <p>
+      Comment identifier, évaluer et maîtriser les dangers sanitaires afin de garantir la sécurité de la pâte à tartiner
+      tout au long du processus de production ?
+    </p>
+
+    <h4>3. Méthodologie HACCP</h4>
+    <ul>
+      <li>Constitution de l’équipe HACCP</li>
+      <li>Description du produit et de son utilisation</li>
+      <li>Diagramme de fabrication</li>
+      <li>Analyse des dangers (biologiques, chimiques, physiques)</li>
+      <li>Détermination des CCP</li>
+      <li>Limites critiques</li>
+      <li>Systèmes de surveillance</li>
+      <li>Actions correctives</li>
+      <li>Vérification et documentation</li>
+    </ul>
+    <p><i>Le projet a démarré par la mise en place des Bonnes Pratiques d’Hygiène (PRP), base indispensable du HACCP.</i></p>
+
+    <h4>4. Mon rôle</h4>
+    <ul>
+      <li>Participation à l’analyse des dangers à chaque étape</li>
+      <li>Contribution à l’identification des points critiques</li>
+      <li>Aide à la définition des paramètres de maîtrise</li>
+      <li>Création et mise à jour de documents HACCP</li>
+      <li>Sensibilisation des opérateurs aux bonnes pratiques</li>
+    </ul>
+
+    <h4>5. Outils utilisés</h4>
+    <ul>
+      <li>Diagramme de fabrication</li>
+      <li>Tableaux d’analyse des dangers</li>
+      <li>Arbre de décision HACCP</li>
+      <li>Fiches CCP</li>
+      <li>Méthode des 5M</li>
+    </ul>
+
+    <h4>Phase 1 – Bonnes Pratiques d’Hygiène (PRP)</h4>
+    <p>
+      Cette phase a permis de réduire les risques à la source avant l’identification des CCP.
+      Elle repose sur les documents suivants :
+    </p>
+
+    <div class="pdf-grid">
+      <a class="pdf-card" href="MATRICE%20DES%20CRITERES.pdf" target="_blank">
+        <span class="arrow">➜</span>
+        Matrice des critères HACCP
+      </a>
+
+      <a class="pdf-card" href="EVALUATION%20ET%20AMÉLIORATION%20DES%20BPH%20A%20L'USINE.pdf" target="_blank">
+        <span class="arrow">➜</span>
+        Évaluation & amélioration des BPH
+      </a>
+
+      <a class="pdf-card" href="LES%20ETAPES%20SYNOPTIQUE%20DE%20LA%20MISE%20EN%20PLACE%20DU%20SYSTEME%20HACCP.pdf" target="_blank">
+        <span class="arrow">➜</span>
+        Étapes de mise en place HACCP
+      </a>
+    </div>
+
+  </div>
+</section>
